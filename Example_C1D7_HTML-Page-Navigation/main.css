@@ -4,20 +4,17 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-
+    color: rgba(0, 106, 255, 0.384);
 }
 
 nav {
     width: 100%;
     display: block;
-    padding: 10px 20px;
+    padding: 22px 22px;
     min-height: 80px;
     background: #1f1f1f;
     white-space: nowrap;
-    text-align: left;
     overflow: hidden;
-    color: blue;
-
 }
 
 nav > a {
@@ -38,17 +35,19 @@ nav ul,
 nav ul li,
 .spacer {
     vertical-align: middle;
+    display: inline-block;
 }
 
 .spacer {
     /* Parent width - Logo width - Menu <ul> width */
-    width: calc(100% - 250px);
+    width: calc(100% - 132px - 276px);
 }
 
 nav ul {
     display: inline-block;
     margin-left: 20px;
     margin-bottom: 15px;
+    color: blue;
 }
 
 nav ul li {
@@ -85,8 +84,9 @@ header{
     display: inline-block;
     white-space: nowrap;
     text-align: center;
-    width: 70%;
     vertical-align: top;
+    height: 80%;
+    width: 100%;
 }
 
 
@@ -97,7 +97,7 @@ main {
     padding: 0;
     text-align: left;
     white-space: nowrap;
-    width: 30%;
+
 }
 
 h1{    
@@ -110,6 +110,9 @@ aside {
     padding: 20px;
     text-align: center;
     height:100%;
+    padding-bottom: 400px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 aside h2 {
@@ -117,16 +120,20 @@ aside h2 {
 }
 
 aside ul li a {
-    color: blue;
+    color: rgba(0, 106, 255, 0.384);
     display: block;
     background-color: #1f1f1f;
 }
 
 .container{
+    text-align: right;
     white-space: nowrap;
     width: 100%;
-    text-align: right;
     height: calc(100vh - 80px - 50px)
+}
+
+.box{
+    display: inline-block;
 }
 
 /* フッター */
@@ -140,18 +147,29 @@ footer {
 }
 
 footer ul {
-    
-    display: inline-block;
+    display: block;
+    margin-right: 15px;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 footer ul li {
-    color: blue;
+    text-align: center;
+    color: rgba(0, 106, 255, 0.384);
     display: inline;
-    margin-right: 15px;
-    border-bottom: 2px solid white;
+
 }
 
 footer p {
+    padding-top: 10px;
     color: aliceblue;
     margin-top: 0;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.footer_p {
+    display: block;
+    border-top: 0.5px solid white;
 }
