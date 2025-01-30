@@ -40,7 +40,7 @@ nav ul li,
 
 .spacer {
     /* Parent width - Logo width - Menu <ul> width */
-    width: calc(100% - 132px - 276px);
+    width: calc(100% - 280px - 276px);
 }
 
 nav ul {
