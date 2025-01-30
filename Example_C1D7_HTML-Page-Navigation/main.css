@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+nav {
+    width: 100%;
+    display: block;
+    padding: 10px 20px;
+    min-height: 80px;
+    background: #1f1f1f;
+    white-space: nowrap;
+    text-align: left;
+    overflow: hidden;
+    color: blue;
+
+}
+
+nav > a {
+    display: inline-block;
+    vertical-align: bottom;
+    max-width: 1080px;
+}
+
+nav img {
+    display:inline-block;
+    vertical-align: middle;
+    max-height: 48px;
+    background-color: white;
+    vertical-align: middle;
+}
+
+nav ul,
+nav ul li,
+.spacer {
+    vertical-align: middle;
+}
+
+.spacer {
+    /* Parent width - Logo width - Menu <ul> width */
+    width: calc(100% - 250px);
+}
+
+nav ul {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+#last-item {
+    margin-right: 0px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(229, 145, 0);
+}
+
+nav ul li a:active {
+    color: rgb(92, 229, 0);
+}
+
+#current-page {
+    color: aquamarine;
+}
+
+
+header{
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+    width: 70%;
+    vertical-align: top;
+}
+
+
+main {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 0;
+    text-align: left;
+    white-space: nowrap;
+    width: 30%;
+}
+
+h1{    
+    color: black;
+}
+
+aside {
+    display:inline-block;
+    background: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    height:100%;
+}
+
+aside h2 {
+    color: white;
+}
+
+aside ul li a {
+    color: blue;
+    display: block;
+    background-color: #1f1f1f;
+}
+
+.container{
+    white-space: nowrap;
+    width: 100%;
+    text-align: right;
+    height: calc(100vh - 80px - 50px)
+}
+
+/* フッター */
+footer {
+    position: absolute;
+    bottom: 0;
+    background: #1f1f1f;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+footer ul {
+    
+    display: inline-block;
+}
+
+footer ul li {
+    color: blue;
+    display: inline;
+    margin-right: 15px;
+    border-bottom: 2px solid white;
+}
+
+footer p {
+    color: aliceblue;
+    margin-top: 0;
+}
