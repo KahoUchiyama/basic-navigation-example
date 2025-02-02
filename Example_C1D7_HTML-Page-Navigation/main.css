@@ -8,13 +8,19 @@
 }
 
 nav {
-    width: 100%;
     display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 22px 22px;
     min-height: 80px;
+    height: 80px;
     background: #1f1f1f;
     white-space: nowrap;
     overflow: hidden;
+    top: o;
+    z-index: 1000;
 }
 
 nav > a {
@@ -79,44 +85,68 @@ nav ul li a:active {
     color: aquamarine;
 }
 
+.content-wrapper {
+    display: block;
+    width: 100%;
+    height: 1500px;
+    padding-top: 80px;
+    position: sticky;
+    top: 0;
+    overflow: visible;
+}
 
 header{
     display: inline-block;
-    white-space: nowrap;
-    text-align: center;
-    vertical-align: top;
-    height: 80%;
-    width: 100%;
-}
-
-
-main {
-    display: inline-block;
-    background: white;
-    color: black;
-    padding: 0;
-    text-align: left;
-    white-space: nowrap;
+    text-align: center;    
+    width: 70%;
+    padding-top: 100px;
+    position: sticky;
+    top:0;
 
 }
 
 h1{    
     color: black;
+    vertical-align: top;
 }
+
+.scroll-top {
+    position: sticky;
+    cursor: pointer; /* カーソルをポインターに変更 */
+    text-align: right; 
+    margin-top: 20px; 
+    z-index: 10;
+}
+
+.scroll-top a {
+    font-size: 20px; 
+    color: black; 
+    text-decoration: underline; 
+    cursor: pointer;
+}
+
+.scroll-top a:hover {
+    color: rgb(229, 145, 0); /* ホバー時の色を変更 */
+}
+
 
 aside {
     display:inline-block;
     background: #1f1f1f;
     padding: 20px;
     text-align: center;
-    height:100%;
-    padding-bottom: 400px;
-    padding-left: 80px;
-    padding-right: 80px;
+    width: 25%;
+    padding-bottom: 100px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    padding-top: 100px;
 }
 
 aside h2 {
+    display: block;
     color: white;
+    background-color: #1f1f1f;
 }
 
 aside ul li a {
@@ -125,20 +155,7 @@ aside ul li a {
     background-color: #1f1f1f;
 }
 
-.container{
-    text-align: right;
-    white-space: nowrap;
-    width: 100%;
-    height: calc(100vh - 80px - 50px)
-}
-
-.box{
-    display: inline-block;
-}
-
-/* フッター */
 footer {
-    position: absolute;
     bottom: 0;
     background: #1f1f1f;
     text-align: center;
@@ -157,19 +174,23 @@ footer ul li {
     text-align: center;
     color: rgba(0, 106, 255, 0.384);
     display: inline;
+    padding-left: 5px;
+    padding-right: 5px
 
 }
 
 footer p {
-    padding-top: 10px;
+    padding-top: 15px;
     color: aliceblue;
     margin-top: 0;
     text-align: center;
     margin: 0 auto;
+    font-size: 12px;
 
 }
 
 .footer_p {
     display: block;
     border-top: 0.5px solid white;
+    margin: 5px;
 }
